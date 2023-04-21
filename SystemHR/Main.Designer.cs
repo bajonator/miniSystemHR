@@ -48,6 +48,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmployees.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dgvEmployees.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.dgvEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -64,7 +65,7 @@
             this.dgvEmployees.Name = "dgvEmployees";
             this.dgvEmployees.RowHeadersVisible = false;
             this.dgvEmployees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEmployees.Size = new System.Drawing.Size(958, 403);
+            this.dgvEmployees.Size = new System.Drawing.Size(1074, 479);
             this.dgvEmployees.TabIndex = 0;
             this.dgvEmployees.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvEmployees_CellFormatting);
             // 
@@ -74,7 +75,7 @@
             this.btnAddEmployee.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnAddEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnAddEmployee.Location = new System.Drawing.Point(12, 421);
+            this.btnAddEmployee.Location = new System.Drawing.Point(12, 497);
             this.btnAddEmployee.Name = "btnAddEmployee";
             this.btnAddEmployee.Size = new System.Drawing.Size(93, 42);
             this.btnAddEmployee.TabIndex = 1;
@@ -88,7 +89,7 @@
             this.btnEditEmployee.BackColor = System.Drawing.Color.DarkKhaki;
             this.btnEditEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnEditEmployee.Location = new System.Drawing.Point(111, 421);
+            this.btnEditEmployee.Location = new System.Drawing.Point(111, 497);
             this.btnEditEmployee.Name = "btnEditEmployee";
             this.btnEditEmployee.Size = new System.Drawing.Size(89, 42);
             this.btnEditEmployee.TabIndex = 2;
@@ -113,7 +114,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.cbFiltering);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(206, 417);
+            this.groupBox1.Location = new System.Drawing.Point(206, 493);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(107, 45);
             this.groupBox1.TabIndex = 4;
@@ -126,7 +127,7 @@
             this.btnDissmiss.BackColor = System.Drawing.Color.Red;
             this.btnDissmiss.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDissmiss.ForeColor = System.Drawing.Color.Black;
-            this.btnDissmiss.Location = new System.Drawing.Point(881, 422);
+            this.btnDissmiss.Location = new System.Drawing.Point(997, 498);
             this.btnDissmiss.Name = "btnDissmiss";
             this.btnDissmiss.Size = new System.Drawing.Size(89, 42);
             this.btnDissmiss.TabIndex = 5;
@@ -139,7 +140,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(979, 475);
+            this.ClientSize = new System.Drawing.Size(1095, 551);
             this.Controls.Add(this.btnDissmiss);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnEditEmployee);
