@@ -20,9 +20,9 @@ namespace SystemHR
             InitializeComponent();
             _groups = GroupHelper.GetGroups("Wszyscy");
             InitGroupCombobox();
-            RefreshEmployee();
             SetColumnsHeader();
             HideColumns();
+            RefreshEmployee();
         }
 
         private void InitGroupCombobox()
@@ -56,7 +56,6 @@ namespace SystemHR
                 employees = employees.Where(x => x.GroupId == selectedGroupId).ToList();
 
             dgvEmployees.DataSource = employees;
-            
         }
 
         private void btnAddEmployee_Click(object sender, EventArgs e)
@@ -118,10 +117,33 @@ namespace SystemHR
             if (employee != null)
             {
                 employee.DismissedDate = DateTime.Now;
-                employee.Employeed = "Zwolnony";
+                employee.Employeed = "Zwolniony";
                 employee.GroupId = 2;
             }
             _fileHelper.SerializeToFile(employees);
+        }
+
+        private void dgvEmployees_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            int value = (int)dgvEmployees.Rows[e.RowIndex].Cells[7].Value;
+
+            if (value == 2)
+            {
+                e.CellStyle.BackColor = Color.Red;
+            }
+            else if (value == 1)
+            {
+                e.CellStyle.BackColor = Color.MediumSeaGreen;
+            }
+            else
+                e.CellStyle.BackColor = Color.White;
+
+
+            dgvEmployees.ColumnHeadersDefaultCellStyle.BackColor = Color.Yellow;
+            dgvEmployees.ColumnHeadersDefaultCellStyle.Font = new Font("SegoeUI", 8, FontStyle.Bold);
+            dgvEmployees.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvEmployees.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dgvEmployees.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
     }
 }

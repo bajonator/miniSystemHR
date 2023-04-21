@@ -158,11 +158,11 @@
             // 
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.ForeColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(111, 209);
+            this.btnCancel.Location = new System.Drawing.Point(23, 209);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(118, 23);
             this.btnCancel.TabIndex = 12;
-            this.btnCancel.Text = "Anuluj";
+            this.btnCancel.Text = "Zakończ dodawanie";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -170,9 +170,9 @@
             // 
             this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirm.ForeColor = System.Drawing.Color.YellowGreen;
-            this.btnConfirm.Location = new System.Drawing.Point(235, 209);
+            this.btnConfirm.Location = new System.Drawing.Point(192, 209);
             this.btnConfirm.Name = "btnConfirm";
-            this.btnConfirm.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirm.Size = new System.Drawing.Size(118, 23);
             this.btnConfirm.TabIndex = 13;
             this.btnConfirm.Text = "Zatwierdź";
             this.btnConfirm.UseVisualStyleBackColor = true;
