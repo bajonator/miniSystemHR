@@ -145,5 +145,16 @@ namespace SystemHR
             dgvEmployees.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             dgvEmployees.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
+
+        private void dgvEmployees_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvEmployees.SelectedRows.Count > 0)
+            {
+                if (dgvEmployees.SelectedRows[0].Cells[7].Value.ToString() == "2")
+                    btnEditEmployee.Enabled = false;
+                else
+                    btnEditEmployee.Enabled = true;
+            }
+        }
     }
 }

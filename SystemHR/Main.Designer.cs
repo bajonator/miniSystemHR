@@ -68,6 +68,7 @@
             this.dgvEmployees.Size = new System.Drawing.Size(1074, 479);
             this.dgvEmployees.TabIndex = 0;
             this.dgvEmployees.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvEmployees_CellFormatting);
+            this.dgvEmployees.SelectionChanged += new System.EventHandler(this.dgvEmployees_SelectionChanged);
             // 
             // btnAddEmployee
             // 
